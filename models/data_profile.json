@@ -1,0 +1,418 @@
+{
+    "dataset_summary": {
+        "num_rows": 10000,
+        "num_cols": 28,
+        "numerical_features_count": 16,
+        "categorical_features_count": 10,
+        "duplicate_rows": 0,
+        "constant_features": []
+    },
+    "target_distribution": {
+        "0_count": 8936,
+        "1_count": 1064,
+        "0_pct": 89.36,
+        "1_pct": 10.639999999999999,
+        "class_imbalance_ratio": 8.398496240601503
+    },
+    "missing_values": [
+        {
+            "column": "EXT_SOURCE_1",
+            "count": 5668,
+            "pct": 56.68,
+            "type": "float64"
+        },
+        {
+            "column": "OCCUPATION_TYPE",
+            "count": 4079,
+            "pct": 40.79,
+            "type": "str"
+        },
+        {
+            "column": "EXT_SOURCE_3",
+            "count": 1991,
+            "pct": 19.91,
+            "type": "float64"
+        },
+        {
+            "column": "EXT_SOURCE_2",
+            "count": 27,
+            "pct": 0.27,
+            "type": "float64"
+        },
+        {
+            "column": "SK_ID_CURR",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "TARGET",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "NAME_CONTRACT_TYPE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "CODE_GENDER",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "FLAG_OWN_CAR",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "FLAG_OWN_REALTY",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "CNT_CHILDREN",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "AMT_INCOME_TOTAL",
+            "count": 0,
+            "pct": 0.0,
+            "type": "float64"
+        },
+        {
+            "column": "AMT_CREDIT",
+            "count": 0,
+            "pct": 0.0,
+            "type": "float64"
+        },
+        {
+            "column": "AMT_ANNUITY",
+            "count": 0,
+            "pct": 0.0,
+            "type": "float64"
+        },
+        {
+            "column": "AMT_GOODS_PRICE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "float64"
+        },
+        {
+            "column": "NAME_INCOME_TYPE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "NAME_EDUCATION_TYPE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "NAME_FAMILY_STATUS",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "NAME_HOUSING_TYPE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "DAYS_BIRTH",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "DAYS_EMPLOYED",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "DAYS_REGISTRATION",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "DAYS_ID_PUBLISH",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "CNT_FAM_MEMBERS",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "REGION_RATING_CLIENT",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "ORGANIZATION_TYPE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "str"
+        },
+        {
+            "column": "DAYS_LAST_PHONE_CHANGE",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        },
+        {
+            "column": "AMT_REQ_CREDIT_BUREAU_YEAR",
+            "count": 0,
+            "pct": 0.0,
+            "type": "int64"
+        }
+    ],
+    "numerical_features": {
+        "CNT_CHILDREN": {
+            "mean": 0.4038,
+            "std": 0.7404055510583397,
+            "min": 0.0,
+            "max": 4.0,
+            "median": 0.0,
+            "correlation_with_target": -0.006852282406872828
+        },
+        "AMT_INCOME_TOTAL": {
+            "mean": 166195.7,
+            "std": 88136.30240877041,
+            "min": 20000.0,
+            "max": 824000.0,
+            "median": 146000.0,
+            "correlation_with_target": -0.009115697699290297
+        },
+        "AMT_CREDIT": {
+            "mean": 665966.2,
+            "std": 386172.7742199272,
+            "min": 62500.0,
+            "max": 3356500.0,
+            "median": 578000.0,
+            "correlation_with_target": -0.00019991333902703338
+        },
+        "AMT_ANNUITY": {
+            "mean": 40741.904,
+            "std": 26946.851633466933,
+            "min": 3150.0,
+            "max": 297730.0,
+            "median": 33950.0,
+            "correlation_with_target": -0.007554276482239047
+        },
+        "AMT_GOODS_PRICE": {
+            "mean": 616338.2,
+            "std": 359442.33403970377,
+            "min": 58000.0,
+            "max": 3322000.0,
+            "median": 534000.0,
+            "correlation_with_target": 0.0006687430107311834
+        },
+        "DAYS_BIRTH": {
+            "mean": -16573.1932,
+            "std": 5287.003070835202,
+            "min": -25567.0,
+            "max": -7305.0,
+            "median": -16634.0,
+            "correlation_with_target": 0.10029699741434815
+        },
+        "DAYS_EMPLOYED": {
+            "mean": 47933.4415,
+            "std": 128874.299614458,
+            "min": -18591.0,
+            "max": 365243.0,
+            "median": -2567.5,
+            "correlation_with_target": -0.058624345487494685
+        },
+        "DAYS_REGISTRATION": {
+            "mean": -3665.6536,
+            "std": 3626.552846569582,
+            "min": -34151.0,
+            "max": 0.0,
+            "median": -2553.5,
+            "correlation_with_target": -0.006841299854082207
+        },
+        "DAYS_ID_PUBLISH": {
+            "mean": -2764.3263,
+            "std": 1580.9833542656154,
+            "min": -5479.0,
+            "max": 0.0,
+            "median": -2753.5,
+            "correlation_with_target": 0.0004343206349515141
+        },
+        "CNT_FAM_MEMBERS": {
+            "mean": 2.1542,
+            "std": 0.8569106076942669,
+            "min": 1.0,
+            "max": 6.0,
+            "median": 2.0,
+            "correlation_with_target": -0.008731096869143412
+        },
+        "REGION_RATING_CLIENT": {
+            "mean": 2.0089,
+            "std": 0.5490454763437264,
+            "min": 1.0,
+            "max": 3.0,
+            "median": 2.0,
+            "correlation_with_target": 0.04934186550881962
+        },
+        "EXT_SOURCE_1": {
+            "mean": 0.4280500266696909,
+            "std": 0.17355589245016798,
+            "min": 0.0166688827328814,
+            "max": 0.956499137793674,
+            "median": 0.4216060020402576,
+            "correlation_with_target": -0.07674068265796169
+        },
+        "EXT_SOURCE_2": {
+            "mean": 0.5012202606678962,
+            "std": 0.1494815873835762,
+            "min": 0.0647361616629299,
+            "max": 0.9712442267526048,
+            "median": 0.5007805228078014,
+            "correlation_with_target": -0.11293185359872977
+        },
+        "EXT_SOURCE_3": {
+            "mean": 0.4470342477124076,
+            "std": 0.1561391527391718,
+            "min": 0.0402358224990317,
+            "max": 0.9093357413977547,
+            "median": 0.4402930793860494,
+            "correlation_with_target": -0.08059402762184205
+        },
+        "DAYS_LAST_PHONE_CHANGE": {
+            "mean": -1105.5027,
+            "std": 1116.8398869694897,
+            "min": -10479.0,
+            "max": 0.0,
+            "median": -753.0,
+            "correlation_with_target": 0.012677135516656463
+        },
+        "AMT_REQ_CREDIT_BUREAU_YEAR": {
+            "mean": 1.8065,
+            "std": 1.3565551128418696,
+            "min": 0.0,
+            "max": 9.0,
+            "median": 2.0,
+            "correlation_with_target": -0.011025378552030967
+        }
+    },
+    "categorical_features": {
+        "NAME_CONTRACT_TYPE": {
+            "unique_values_count": 2,
+            "value_counts": {
+                "Cash loans": 9032,
+                "Revolving loans": 968
+            }
+        },
+        "CODE_GENDER": {
+            "unique_values_count": 2,
+            "value_counts": {
+                "F": 6659,
+                "M": 3341
+            }
+        },
+        "FLAG_OWN_CAR": {
+            "unique_values_count": 2,
+            "value_counts": {
+                "N": 6590,
+                "Y": 3410
+            }
+        },
+        "FLAG_OWN_REALTY": {
+            "unique_values_count": 2,
+            "value_counts": {
+                "Y": 6846,
+                "N": 3154
+            }
+        },
+        "NAME_INCOME_TYPE": {
+            "unique_values_count": 4,
+            "value_counts": {
+                "Working": 5279,
+                "Commercial associate": 2480,
+                "Pensioner": 1415,
+                "State servant": 826
+            }
+        },
+        "NAME_EDUCATION_TYPE": {
+            "unique_values_count": 5,
+            "value_counts": {
+                "Secondary / special education": 7122,
+                "Higher education": 2389,
+                "Incomplete higher": 287,
+                "Lower secondary": 188,
+                "Academic degree": 14
+            }
+        },
+        "NAME_FAMILY_STATUS": {
+            "unique_values_count": 5,
+            "value_counts": {
+                "Married": 6461,
+                "Single / not married": 1458,
+                "Civil marriage": 977,
+                "Separated": 599,
+                "Widow": 505
+            }
+        },
+        "NAME_HOUSING_TYPE": {
+            "unique_values_count": 6,
+            "value_counts": {
+                "House / apartment": 8844,
+                "With parents": 784,
+                "Municipal apartment": 170,
+                "Rented apartment": 143,
+                "Office apartment": 50,
+                "Co-op apartment": 9
+            }
+        },
+        "OCCUPATION_TYPE": {
+            "unique_values_count": 9,
+            "value_counts": {
+                "nan": 4079,
+                "Laborers": 2094,
+                "Sales staff": 1175,
+                "Core staff": 891,
+                "Managers": 582,
+                "Drivers": 485,
+                "Accountants": 234,
+                "High skill tech staff": 204,
+                "Medicine staff": 196,
+                "Security staff": 60
+            }
+        },
+        "ORGANIZATION_TYPE": {
+            "unique_values_count": 11,
+            "value_counts": {
+                "Business Entity Type 3": 1928,
+                "Industry: type 9": 1762,
+                "XNA": 1415,
+                "Self-employed": 1387,
+                "Other": 1256,
+                "Medicine": 531,
+                "School": 433,
+                "Government": 411,
+                "Trade: type 7": 350,
+                "Kindergarten": 281,
+                "Construction": 246
+            }
+        }
+    }
+}
