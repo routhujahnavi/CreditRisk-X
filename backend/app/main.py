@@ -21,13 +21,15 @@ app.add_middleware(
 # Include the ML API routes
 app.include_router(router)
 
-@app.get("/")
-def read_root():
-    return {
-        "message": "Welcome to CreditRisk-X API",
-        "docs_url": "/docs",
-        "health_url": "/api/health"
-    }
+from fastapi.staticfiles import StaticFiles
+import os
+
+# Resolve path to frontend/dist statically and mount it
+base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+frontend_dist = os.path.join(base_dir, "frontend", "dist")
+
+if os.path.exists(frontend_dist):
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="static")
 
 if __name__ == "__main__":
     uvicorn.run("backend.app.main:app", host="0.0.0.0", port=8000, reload=True)
