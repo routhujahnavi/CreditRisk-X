@@ -7,7 +7,9 @@ from typing import Dict, Any, List
 
 class PredictionService:
     def __init__(self):
-        self.models_dir = '/Users/rjahnavisantoshi/Desktop/CreditRisk/models'
+        # Resolve models directory dynamically relative to project root
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+        self.models_dir = os.path.join(base_dir, 'models')
         self.metadata_path = os.path.join(self.models_dir, 'pipeline_metadata.json')
         self.pipelines = {}
         self.metadata = {}

@@ -4,7 +4,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 # Ensure workspace root is in python path
-sys.path.insert(0, '/Users/rjahnavisantoshi/Desktop/CreditRisk')
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import joblib
 import pandas as pd
@@ -66,7 +66,7 @@ def test_preprocessor_configuration():
 
 def test_model_loading_and_prediction():
     """Verify saved pipelines load correctly and yield valid probabilities [0, 1]."""
-    models_dir = '/Users/rjahnavisantoshi/Desktop/CreditRisk/models'
+    models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'models')
     lr_path = os.path.join(models_dir, 'logistic_regression_pipeline.joblib')
     gb_path = os.path.join(models_dir, 'gradient_boosting_pipeline.joblib')
     
