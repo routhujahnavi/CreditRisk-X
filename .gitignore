@@ -32,3 +32,7 @@ frontend/dist/
 *.njsproj
 *.sln
 *.swp
+
+# Project Reports
+CreditRisk_X_Project_Report_Final.docx
+CreditRisk_X_Project_Report_Final.md
