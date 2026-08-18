@@ -381,7 +381,7 @@ Beyond predicting raw probability, the system implements a local explanation eng
 ### Review Committee
 | Role | Coordinator Name & Department |
 | :--- | :--- |
-| **Summer Internship Coordinator** | **Mrs. G. Pranitha** (Assistant Professor) |
+| **Summer Internship Coordinator** | **Mrs. G. Sateesh** (Assistant Professor) |
 | **Head of the Department** | **Dr. G. Srinivas** (Computer Science and Engineering) |
 
 ### API Route Configuration
