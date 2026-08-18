@@ -2,6 +2,9 @@
 
 CreditRisk-X is a production-quality, explainable credit default risk prediction and decision boundary optimization platform based on the **Home Credit Default Risk** dataset. It includes a modular Machine Learning pipeline (preprocessing, stratified cross-validation, modeling, and explanation), a FastAPI backend, and an interactive React-based analytics dashboard.
 
+### 🚀 Live Application
+The platform is deployed live and can be accessed at: **[https://creditrisk-x.onrender.com](https://creditrisk-x.onrender.com)**
+
 ---
 
 ## 1. Architecture Overview
